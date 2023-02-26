@@ -13085,7 +13085,7 @@ print {
   margin: 0 10px 0 0;
 }
 
-[data-role-background] {
+[data-role-background="warrior"] {
   animation: navAnimOpen .2s ease-in-out;
   background-image: url(/images/warrior-bg.jpg);
   max-width: 100%;
