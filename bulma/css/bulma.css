@@ -13084,7 +13084,7 @@ print {
   display: inline-block;
   margin: 0 10px 0 0;
 }
-
+/*
 [data-role-background="warrior"] {
   animation: navAnimOpen .2s ease-in-out;
   background-image: url(/images/warrior-bg.jpg);
@@ -13103,11 +13103,11 @@ print {
 
 [data-role-background="mage"] {
   animation: navAnimOpen .2s ease-in-out;
-  background-image: url(/images/sub-classes.jpg);
+  background-image: url(/images/wizard-bg.jpg);
   max-width: 100%;
   max-height: 100%;
   background-size: cover;
 }
-
+*/
 /*  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('../../scout-bg.JPG') no-repeat center center fixed;
 */
