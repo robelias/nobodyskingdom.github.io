@@ -148,7 +148,7 @@
     </div>
   </section>
 
-  <section class="hero is-dark is-fullheight" id="class" data-role-background="warrior">
+  <section class="hero is-dark is-fullheight" id="class" data-role-background="warrior" >    
     <div class="hero-head section" style="margin-top: 18px;">
       <div class="container has-text-centered">
         <div>
@@ -337,6 +337,7 @@
 
       this.classList.add("is-active");
       document.getElementById('class').setAttribute('data-role-background', this.getAttribute('data-role'));
+
     }
 
     // this function will be called when a button is clicked
@@ -367,8 +368,7 @@
     selector.selectedIndex = Array.from(selector.options).map(opt => opt.value).indexOf(startLang)
 
     // fill "The selected language is:"
-    document.getElementById('browserLang').innerText = lang;
-    document.getElementById('startLang').innerText = startLang;
+ 
   </script>
 </body>
 
