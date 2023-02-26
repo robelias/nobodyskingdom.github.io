@@ -1,0 +1,125 @@
+body {
+    position: relative;
+    font-family: 'Open Sans',sans-serif;
+    background-color: #100628;
+    color: #fff;
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex!important;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(2px);
+    width: 100%;
+    z-index: 1000;
+    transition: padding .9s ease-out;
+}
+nav {
+    padding: 10px 0!important;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    width: 100%;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+.flex-row {
+    flex-direction: row!important;
+}
+
+.d-flex {
+    display: flex!important;
+}
+
+.w-100 {
+    width: 100%!important;
+}
+
+header nav a {
+    color: #fff!important;
+    transition: var(--main-transition);
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+header nav a.navbar-brand {
+    line-height: 50px;
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+header nav.navbar-desktop ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a.nav-link:hover, header nav ul li a.nav-link.active {
+    color: var(--main-color)!important;
+}
+
+header nav.navbar-desktop ul li a.nav-link {
+    font-size: 16px;
+}
+
+header nav ul li a.nav-link {
+    position: relative;
+    padding: 8px!important;
+}
+
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+    color: #0d6efd;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.justify-content-between {
+    justify-content: space-between!important;
+}
+
+.fancy-font {
+    font-family: 'Sportypo',sans-serif;
+}
+
+.p-0 {
+    padding: 0!important;
+}
+
+/*-----------------------------*/
+.home {
+    padding-top: 110px;
+    padding-bottom: 50px;
+    background: url(../images/home-bg.png);
+    background-size: cover;
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5);
+}
+
+.home-field .image img {
+    max-width: 400px;
+}
