@@ -341,7 +341,18 @@
 
       this.classList.add("is-active");
       document.getElementById('class').setAttribute('data-role-background', this.getAttribute('data-role'));
-      console.log("ff");
+
+      switch (this.getAttribute('data-role')) {
+        case "warrior":
+        document.getElementById('class').style.backgroundImage="url(images/warrior-bg.jpg)";
+          break;
+        case "scout":
+        document.getElementById('class').style.backgroundImage="url(images/scout-bg.jpg)";
+          break;
+        case "mage":
+        document.getElementById('class').style.backgroundImage="url(images/wizard-bg.jpg)";
+          break;
+      }      
     }
 
     // this function will be called when a button is clicked
