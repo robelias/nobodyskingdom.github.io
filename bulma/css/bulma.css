@@ -13087,21 +13087,27 @@ print {
 
 [data-role-background] {
   animation: navAnimOpen .2s ease-in-out;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('../../warrior-bg.JPG') no-repeat center center fixed;
-  max-width: 100%; max-height: 100%; 
-   background-size: cover;;
+  background-image: url(/images/warrior-bg.jpg);
+  max-width: 100%;
+  max-height: 100%;
+  background-size: cover;
 }
 
 [data-role-background="scout"] {
   animation: navAnimOpen .2s ease-in-out;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('../../scout-bg.JPG') no-repeat center center fixed ;
-   max-width: 100%; max-height: 100%; 
-   background-size: cover;;
+  background-image: url(/images/scout-bg.jpg);
+  max-width: 100%;
+  max-height: 100%;
+  background-size: cover;
 }
 
 [data-role-background="mage"] {
   animation: navAnimOpen .2s ease-in-out;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('../../wizard-bg.JPG') no-repeat center center fixed;
-  max-width: 100%; max-height: 100%; 
-   background-size: cover;;
+  background-image: url(/images/wizard-bg.jpg);
+  max-width: 100%;
+  max-height: 100%;
+  background-size: cover;
 }
+
+/*  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('../../scout-bg.JPG') no-repeat center center fixed;
+*/
