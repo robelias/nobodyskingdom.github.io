@@ -4,85 +4,125 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv=“X-UA-Compatible” content="ie=edge">  
+  <meta http-equiv=“X-UA-Compatible” content="ie=edge">
   <title>Nobodies Kingdom</title>
-  <link rel="stylesheet"  type="text/css" href="bulma/css/bulma.css">
-  <link rel="stylesheet"  type="text/css" href="bulma/css/bulma-timeline.min.css">
+  <link rel="stylesheet" type="text/css" href="bulma/css/bulma.css">
+  <link rel="stylesheet" type="text/css" href="bulma/css/bulma-timeline.min.css">
   <link rel="stylesheet" type="text/css" href="bulma/css/bulma-accordion.min.css">
 </head>
 
 <body>
   <header class="navbar is-dark is-fixed-top">
     <div class="container">
-      <div class="navbar-brand">
-        <a class="navbar-item">
-          <img src="images/game-name-02.png" alt="Log">
-        </a>
-        <span class="navbar-burger" data-target="navbarMenuHeroC">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-      </div>
-      <div id="navbarMenuHeroC" class="navbar-menu">
-        <div class="navbar-end">
-          <a class="navbar-item is-active" href="#home" data-scroll="home">
-            Home
-          </a>
-          <a class="navbar-item" href="#info" data-scroll="info">
-            Information
-          </a>
-          <a class="navbar-item" href="#class" data-scroll="class">
-            Character Class
-          </a>
-          <a class="navbar-item" href="#sub-classes" data-scroll="class">
-            Sub-Class
-          </a>
-          <select id="langSelector" class="is-dark " style="height: 25px; margin-top: 15px;">
-            <option value="en">English</option>
-            <option value="es">Espanol</option>
-          </select>
+        <div class="navbar-brand">
+            <a class="navbar-item">
+                <img src="images/game-name-02.png" />
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
         </div>
-      </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start"></div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-dark has-text-success" href="#home" data-scroll="home">
+                            <strong>Home</strong>
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-dark has-text-success" href="#info" data-scroll="info">
+                            <strong>Information</strong>
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-dark has-text-success" href="#class" data-scroll="class">
+                            <strong>Class</strong>
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-dark has-text-success" href="#sub-classes" data-scroll="sub-classes">
+                            <strong>Sub-Class</strong>
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-item">
+                    <select id="langSelector" class="is-dark dropdown is-medium">
+                        <div class="">
+                            <option value="en" class="dropdown-item">EN</option>
+                            <option value="es" class="dropdown-item">ES</option>
+                        </div>
+
+                    </select>
+                </div>
+
+            </div>
+        </div>
     </div>
-  </header>
+</header>
 
-  <section class="hero is-info is-fullheight" id="home"
-    style="background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5) ), url(images/start-bg.jpg) no-repeat center fixed; max-width: 100%; max-height: 100%; background-size: cover;">
+  <section class="hero is-dark is-fullheight" id="home"
+  style="background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5) ), url(images/start-bg.jpg) no-repeat center fixed; max-width: 100%; max-height: 100%; background-size: cover;">
+    <!-- Hero content: will be in the middle -->
     <div class="hero-body">
-      <div class="container has-text-left">
-        <a class="title">
-          <img src="images/game-name-01.png" style="margin-top: -35px; max-width: 20em;">
-        </a>
-        <div class="title has-text-justified" style="max-width: 23em;">
-          <p class="lang lang-en subtitle">
-            Amazing diablo-style RPG game in which you'll have to get a lot of resources to improve your equipment and
-            conquer the dangers of this new kingdom.
-          </p>
-          <p class="lang lang-es subtitle">
-            Impresionante juego de rol al estilo diablo en el que tendrás que conseguir una gran cantidad de recursos
-            para
-            mejorar tu equipo y conquistar los peligros de este nuevo reino.
-          </p>
-        </div>
-        <a href="#" target="_blank" class="button is-primary is-large">
-          <span class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 8px;" class="ionicon" viewBox="0 0 512 512">
-              <title>Join to Beta test</title>
-              <path fill="#ffff"
-                d="M483.13 245.38C461.92 149.49 430 98.31 382.65 84.33A107.13 107.13 0 00352 80c-13.71 0-25.65 3.34-38.28 6.88C298.5 91.15 281.21 96 256 96s-42.51-4.84-57.76-9.11C185.6 83.34 173.67 80 160 80a115.74 115.74 0 00-31.73 4.32c-47.1 13.92-79 65.08-100.52 161C4.61 348.54 16 413.71 59.69 428.83a56.62 56.62 0 0018.64 3.22c29.93 0 53.93-24.93 70.33-45.34 18.53-23.1 40.22-34.82 107.34-34.82 59.95 0 84.76 8.13 106.19 34.82 13.47 16.78 26.2 28.52 38.9 35.91 16.89 9.82 33.77 12 50.16 6.37 25.82-8.81 40.62-32.1 44-69.24 2.57-28.48-1.39-65.89-12.12-114.37zM208 240h-32v32a16 16 0 01-32 0v-32h-32a16 16 0 010-32h32v-32a16 16 0 0132 0v32h32a16 16 0 010 32zm84 4a20 20 0 1120-20 20 20 0 01-20 20zm44 44a20 20 0 1120-19.95A20 20 0 01336 288zm0-88a20 20 0 1120-20 20 20 0 01-20 20zm44 44a20 20 0 1120-20 20 20 0 01-20 20z" />
-            </svg>
+      <div class="container has-text-justified">
+        <div class="item-1">
+          <div class="columns">
+            <div class="column is-half ">             
+              <div class="subtitle ">
+                <div>
+                  <a class="title">
+                    <img src="images/game-name-01.png" >
+                  </a>
+                  <div class="title has-text-justified">
+                    <p class="lang lang-en subtitle">
+                      Amazing diablo-style RPG game in which you'll have to get a lot of resources to improve your equipment and
+                      conquer the dangers of this new kingdom.
+                    </p>
+                    <p class="lang lang-es subtitle">
+                      Impresionante juego de rol al estilo diablo en el que tendrás que conseguir una gran cantidad de recursos
+                      para
+                      mejorar tu equipo y conquistar los peligros de este nuevo reino.
+                    </p>
+                  </div>
+                  <a href="download.html" target="_blank" class="button is-primary is-large">
+                    <span class="icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 8px;" class="ionicon" viewBox="0 0 512 512">
+                        <title>Join to Beta test</title>
+                        <path fill="#ffff"
+                          d="M483.13 245.38C461.92 149.49 430 98.31 382.65 84.33A107.13 107.13 0 00352 80c-13.71 0-25.65 3.34-38.28 6.88C298.5 91.15 281.21 96 256 96s-42.51-4.84-57.76-9.11C185.6 83.34 173.67 80 160 80a115.74 115.74 0 00-31.73 4.32c-47.1 13.92-79 65.08-100.52 161C4.61 348.54 16 413.71 59.69 428.83a56.62 56.62 0 0018.64 3.22c29.93 0 53.93-24.93 70.33-45.34 18.53-23.1 40.22-34.82 107.34-34.82 59.95 0 84.76 8.13 106.19 34.82 13.47 16.78 26.2 28.52 38.9 35.91 16.89 9.82 33.77 12 50.16 6.37 25.82-8.81 40.62-32.1 44-69.24 2.57-28.48-1.39-65.89-12.12-114.37zM208 240h-32v32a16 16 0 01-32 0v-32h-32a16 16 0 010-32h32v-32a16 16 0 0132 0v32h32a16 16 0 010 32zm84 4a20 20 0 1120-20 20 20 0 01-20 20zm44 44a20 20 0 1120-19.95A20 20 0 01336 288zm0-88a20 20 0 1120-20 20 20 0 01-20 20zm44 44a20 20 0 1120-20 20 20 0 01-20 20z" />
+                      </svg>
+          
+                    </span>
+                    <span class="lang lang-en">Join to Beta</span>
+                    <span class="lang lang-es">Descargar la Beta</span>
+                  </a>
+                </div>
+              </div>
+              
 
-          </span>
-          <span class="lang lang-en">Join to Beta</span>
-          <span class="lang lang-es">Descargar la Beta</span>
-        </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="hero is-dark is-fullheight parallax-1" id="info"
-    style="background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5) ), url(images/web-bg-02.jpg) no-repeat center ; max-width: 100%; max-height: 100%; background-size: cover; ">
+  <section class="hero is-dark is-fullheight" id="info"
+  style="background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5) ), url(images/web-bg.jpg) no-repeat center; max-width: 100%; max-height: 100%; background-size: cover;">
     <div class="hero-head section has-text-centered">
       <div class="container has-text-centered">
         <div>
@@ -103,53 +143,69 @@
         </div>
       </div>
     </div>
-    <div class="hero-body container has-text-centered has-text-justified" style="max-width: 60em; margin-top: -80px;">
-      <div class="subtitle ">
-        <div>
-          <p class="lang lang-es ">Has llegado a un nuevo mundo con la misión de conquistarlo, pero hay innumerables
-            peligros que pondrán a prueba tu valía. Cada vez que alguien llega a este reino es separado del mundo real y
-            colocado en un espejismo para que progreses en solitario.</p>
-          <p class="lang lang-en">You have arrived in a new world with the mission of conquering it, but there are
-            innumerable dangers that will test your worth. Every time someone comes to this realm they are separated
-            from the
-            real world and placed in a mirage for you to progress solo.</p>
-          <p class="lang lang-es">Tendrás que ir abriéndote paso en este mundo buscando recursos para mejorar tu
-            campamento y tu armamento de combate para ir conquistando los pisos de la gran torre hasta erradicar
-            completamente el mal en el reino y reclamar sus riquezas.</p>
-          <p class="lang lang-en">You will have to make your way in this world looking for resources to improve your
-            camp and your combat weapons to conquer the floors of the great tower until you completely eradicate evil in
-            the kingdom and claim its riches.</p>
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body">
+      <div class="container has-text-justified">
+        <div class="item-1">
+          <div class="columns">
+            <div class="column is-half ">             
+              <div class="subtitle ">
+                <div>
+                  <p class="lang lang-es ">Has llegado a un nuevo mundo con la misión de conquistarlo, pero hay innumerables
+                    peligros que pondrán a prueba tu valía. Cada vez que alguien llega a este reino es separado del mundo real y
+                    colocado en un espejismo para que progreses en solitario.</p>
+                  <p class="lang lang-en">You have arrived in a new world with the mission of conquering it, but there are
+                    innumerable dangers that will test your worth. Every time someone comes to this realm they are separated
+                    from the
+                    real world and placed in a mirage for you to progress solo.</p>
+                  <p class="lang lang-es">Tendrás que ir abriéndote paso en este mundo buscando recursos para mejorar tu
+                    campamento y tu armamento de combate para ir conquistando los pisos de la gran torre hasta erradicar
+                    completamente el mal en el reino y reclamar sus riquezas.</p>
+                  <p class="lang lang-en">You will have to make your way in this world looking for resources to improve your
+                    camp and your combat weapons to conquer the floors of the great tower until you completely eradicate evil in
+                    the kingdom and claim its riches.</p>
+        
+                  <div class="pt-5 ">
+                    <p class="lang lang-es title is-4">Caracteristicas</p>
+                    <p class="lang lang-en title is-4">Characteristics</p>
+        
+                    <div class=" content has-text-justified">
+                      <ul class="lang lang-es">
+                        <li>Explorar una peligrosa cueva en busca de recursos y materiales.</li>
+                        <li>Derrota a mas de 30 jefes de nivel.</li>
+                        <li>Conoce y salva a caballeros errantes para aprender nuevas maestrías.</li>
+                        <li>Obtén uno de las nueve clases adicionales.</li>
+                        <li>Únete a tus amigos para superar escenarios especiales y eventos.</li>
+                        <li>Crea un gremio y desafía a otros gremios.</li>
+                      </ul>
+                      <ul class="lang lang-en">
+                        <li>Explore a dangerous cave for resources and materials.</li>
+                        <li>Defeat over 30 level bosses.</li>
+                        <li>Meet and save wandering knights to learn new masteries.</li>
+                        <li>Obtain one of nine additional classes.</li>
+                        <li>Team up with your friends to beat special stages and events.</li>
+                        <li>Create a guild and challenge other guilds.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
 
-          <div class="pt-5 ">
-            <p class="lang lang-es title is-4">Caracteristicas</p>
-            <p class="lang lang-en title is-4">Characteristics</p>
-
-            <div class=" content has-text-justified">
-              <ul class="lang lang-es">
-                <li>Explorar una peligrosa cueva en busca de recursos y materiales.</li>
-                <li>Derrota a mas de 30 jefes de nivel.</li>
-                <li>Conoce y salva a caballeros errantes para aprender nuevas maestrías.</li>
-                <li>Obtén uno de las nueve clases adicionales.</li>
-                <li>Únete a tus amigos para superar escenarios especiales y eventos.</li>
-                <li>Crea un gremio y desafía a otros gremios.</li>
-              </ul>
-              <ul class="lang lang-en">
-                <li>Explore a dangerous cave for resources and materials.</li>
-                <li>Defeat over 30 level bosses.</li>
-                <li>Meet and save wandering knights to learn new masteries.</li>
-                <li>Obtain one of nine additional classes.</li>
-                <li>Team up with your friends to beat special stages and events.</li>
-                <li>Create a guild and challenge other guilds.</li>
-              </ul>
+            </div>
+            <div class="column is-half">
+              <figure class="image is-16by9">
+                <iframe class="has-ratio" width="640" height="360" src="https://www.youtube.com/embed/xyFeq8EEQo8" title="Nobodys Kingdom - Game Trailer" frameborder="0"; autoplay;
+                  allowfullscreen></iframe>
+              </figure>
             </div>
           </div>
         </div>
       </div>
-
     </div>
   </section>
 
-  <section class="hero container is-dark is-fullheight" id="class" data-role-background="warrior"  
+  <section class="hero container is-dark is-fullheight" id="class" data-role-background="warrior"
     style="background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5) ), url(images/warrior-bg.jpg) no-repeat center fixed; max-width: 100%; max-height: 100%; background-size: cover;">
     <div class="hero-head section" style="margin-top: 18px;">
       <div class="container has-text-centered">
@@ -276,32 +332,40 @@
     </div>
   </section>
 
-  <section class="hero is-link is-fullheight " id="sub-classes"
-    style="background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5) ), url(images/sub-classes.jpg) no-repeat center ; max-width: 100%; max-height: 100%; background-size: cover; ">
+  <section class="hero is-dark is-fullheight" id="sub-classes"
+  style="background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5) ), url(images/sub-classes.jpg) no-repeat center ; max-width: 100%; max-height: 100%; background-size: cover; ">
+    <!-- Hero content: will be in the middle -->
     <div class="hero-body">
-      <div class="hero-body">
-        <div class="">
-          <p class="lang lang-es title is-1">
-            Maestrías y talentos
-          </p>
-          <p class="lang lang-en title is-1">
-            Masteries and Talents
-          </p>
-          <div class="title has-text-justified" style="max-width: 23em;">
-            <p class="lang lang-en subtitle">
-              During your exploration of the world you can rescue some knights-errant who got stranded between worlds.
-              Many of them can teach you talents and masteries that will complement your main role.
-            </p>
-            <p class="lang lang-es subtitle">
-              Durante tu exploración por el mundo puedes rescatar algunos caballeros andantes que se quedaron varados
-              entre mundos. Muchos de ellos pueden enseñarte talentos y maestrías que complementaran tu rol principal.
-            </p>
-          </div>
+      <div class="container">
+        <div class="item-1">
+          <div class="columns">
+            <div class="column is-half ">             
+              <div class="">
+                <p class="lang lang-es title is-1">
+                  Maestrías y talentos
+                </p>
+                <p class="lang lang-en title is-1">
+                  Masteries and Talents
+                </p>
+                <div class="title has-text-justified" style="max-width: 23em;">
+                  <p class="lang lang-en subtitle">
+                    During your exploration of the world you can rescue some knights-errant who got stranded between worlds.
+                    Many of them can teach you talents and masteries that will complement your main role.
+                  </p>
+                  <p class="lang lang-es subtitle">
+                    Durante tu exploración por el mundo puedes rescatar algunos caballeros andantes que se quedaron varados
+                    entre mundos. Muchos de ellos pueden enseñarte talentos y maestrías que complementaran tu rol principal.
+                  </p>
+                </div>
+      
+              </div>
+              
 
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
   </section>
 
   <footer class="hero is-dark is-flex-tablet ">
@@ -344,15 +408,15 @@
 
       switch (this.getAttribute('data-role')) {
         case "warrior":
-        document.getElementById('class').style.backgroundImage="url(images/warrior-bg.jpg)";
+          document.getElementById('class').style.backgroundImage = "url(images/warrior-bg.jpg)";
           break;
         case "scout":
-        document.getElementById('class').style.backgroundImage="url(images/scout-bg.jpg)";
+          document.getElementById('class').style.backgroundImage = "url(images/scout-bg.jpg)";
           break;
         case "mage":
-        document.getElementById('class').style.backgroundImage="url(images/wizard-bg.jpg)";
+          document.getElementById('class').style.backgroundImage = "url(images/wizard-bg.jpg)";
           break;
-      }      
+      }
     }
 
     // this function will be called when a button is clicked
