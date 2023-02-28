@@ -43,7 +43,7 @@
                                 <option value="en" class="dropdown-item">EN</option>
                                 <option value="es" class="dropdown-item">ES</option>
                             </div>
-    
+
                         </select>
                     </div>
 
@@ -54,7 +54,7 @@
 
 
     <section class="hero is-dark is-fullheight"
-    style="background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5) ), url(images/web-bg.jpg) no-repeat center; max-width: 100%; max-height: 100%; background-size: cover;">
+        style="background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5) ), url(images/web-bg.jpg) no-repeat center; max-width: 100%; max-height: 100%; background-size: cover;">
 
         <!-- Hero content: will be in the middle -->
         <div class="hero-body">
@@ -105,7 +105,8 @@
                                     <span class="lang lang-es">Descargar</span>
                                 </a>
                                 <p class="mr-5"></p>
-                                <a href="mailto:greenrune.contact@gmail.com?subject=About Nobodys Kingdom" class="button is-primary is-large">
+                                <a href="mailto:greenrune.contact@gmail.com?subject=About Nobodys Kingdom"
+                                    class="button is-primary is-large">
                                     <span class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 8px;"
                                             class="ionicon" viewBox="0 0 512 512">
@@ -161,15 +162,35 @@
         // updating select with start value
         selector.selectedIndex = Array.from(selector.options).map(opt => opt.value).indexOf(startLang)
 
-    // fill "The selected language is:"
+        // fill "The selected language is:"
+        document.addEventListener('DOMContentLoaded', () => {
 
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Add a click event on each of them
+            $navbarBurgers.forEach(el => {
+                el.addEventListener('click', () => {
+
+                    // Get the target from the "data-target" attribute
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+
+                    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+
+                });
+            });
+
+        });
     </script>
     <script src="bulma/js/aos.js"></script>
     <script>
         AOS.init({
-          once: true
+            once: true
         });
-      </script>
+    </script>
 </body>
 
 </html>

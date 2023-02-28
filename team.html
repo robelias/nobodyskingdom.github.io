@@ -43,7 +43,7 @@
                                 <option value="en" class="dropdown-item">EN</option>
                                 <option value="es" class="dropdown-item">ES</option>
                             </div>
-    
+
                         </select>
                     </div>
 
@@ -57,24 +57,27 @@
         style="background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5) ), url(images/web-bg.jpg) no-repeat center; max-width: 100%; max-height: 100%; background-size: cover;">
         <div class="hero-head section has-text-centered">
             <div class="container has-text-centered" style="max-width: 500em;">
-                <img class="is-rounded" src="images/company-logo01.png" style="max-width: 350px; margin-top: -50px; margin-bottom: 15px;">
+                <img class="is-rounded" src="images/company-logo01.png"
+                    style="max-width: 350px; margin-top: -50px; margin-bottom: 15px;">
                 <div>
                     <p class="subtitle lang lang-en">
-                        The team behind this project is Green Rune. A video game studio comprised of individuals with over
+                        The team behind this project is Green Rune. A video game studio comprised of individuals with
+                        over
                         5 years of experience on video game development, and whose love and passion for creating video
                         games may be equaled but never superated.
                     </p>
                     <p class="subtitle lang lang-es">
-                        El equipo detrás de este proyecto es Green Rune. Un estudio de videojuegos compuesto por personas
+                        El equipo detrás de este proyecto es Green Rune. Un estudio de videojuegos compuesto por
+                        personas
                         con más de 8 años de experiencia en el desarrollo de videojuegos.
                     </p>
                 </div>
             </div>
         </div>
-        
+
         <!-- Hero content: will be in the middle -->
         <div class="hero-body">
-            <div class="container" style= "margin-top: -80px;">
+            <div class="container" style="margin-top: -80px;">
                 <div class="item-1">
                     <div class="columns is-centered">
                         <div class="column">
@@ -83,7 +86,8 @@
                                 <div class="pt-5 ">
                                     <p class="title is-4" style="margin-bottom: -10;">Rob Elías</p>
                                     <p class="subtitle is-5" style="margin-bottom: 0px;">CEO/Founder</p>
-                                    <p class="has-text-weight-semibold  subtitle is-6">Game Designer / UI/UX / Unity Developer</p>
+                                    <p class="has-text-weight-semibold  subtitle is-6">Game Designer / UI/UX / Unity
+                                        Developer</p>
                                 </div>
                             </div>
                         </div>
@@ -93,7 +97,8 @@
                                 <div class="pt-5 ">
                                     <p class="title is-4" style="margin-bottom: -10;">David Chavés</p>
                                     <p class="subtitle is-5" style="margin-bottom: 0px;">CTO/CoFounder</p>
-                                    <p class="has-text-weight-semibold  subtitle is-6">Full-Stack Unity Developer / AI Developer</p>
+                                    <p class="has-text-weight-semibold  subtitle is-6">Full-Stack Unity Developer / AI
+                                        Developer</p>
                                 </div>
                             </div>
                         </div>
@@ -132,7 +137,28 @@
         // updating select with start value
         selector.selectedIndex = Array.from(selector.options).map(opt => opt.value).indexOf(startLang)
 
-    // fill "The selected language is:"
+        // Touch
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Add a click event on each of them
+            $navbarBurgers.forEach(el => {
+                el.addEventListener('click', () => {
+
+                    // Get the target from the "data-target" attribute
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+
+                    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+
+                });
+            });
+
+        });
 
     </script>
     <script src="bulma/js/aos.js"></script>
