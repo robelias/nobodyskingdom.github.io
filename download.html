@@ -7,9 +7,10 @@
     <meta http-equiv=“X-UA-Compatible” content="ie=edge">
     <title>Nobodies Kingdom</title>
     <link rel="stylesheet" type="text/css" href="bulma/css/bulma.css">
+    <link rel="stylesheet" type="text/css" href="bulma/css/aos.css">
 </head>
 
-<body>
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
     <header class="navbar is-dark is-fixed-top">
         <div class="container">
             <div class="navbar-brand">
@@ -59,8 +60,8 @@
         <div class="hero-body">
             <div class="container has-text-justified">
                 <div class="item-1">
-                    <div class="columns">
-                        <div class="column is-half ">
+                    <div class="columns is-vcentered">
+                        <div data-aos="fade-down" class="column is-half aos-ini aos-animate">
                             <div>
                                 <h2 class="title is-1 lang lang-es">Bienvenido a nuestra BETA</h2>
                                 <h2 class="title is-1 lang lang-en">Welcome to Our Beta Test</h2>
@@ -163,6 +164,12 @@
     // fill "The selected language is:"
 
     </script>
+    <script src="bulma/js/aos.js"></script>
+    <script>
+        AOS.init({
+          once: true
+        });
+      </script>
 </body>
 
 </html>

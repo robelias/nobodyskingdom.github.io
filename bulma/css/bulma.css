@@ -13084,15 +13084,13 @@ print {
   display: inline-block;
   margin: 0 10px 0 0;
 }
-/*
-[data-role-background="warrior"] {
-  animation: navAnimOpen .2s ease-in-out;
-  background-image: url(/images/warrior-bg.jpg);
+
+#class {
   max-width: 100%;
   max-height: 100%;
   background-size: cover;
 }
-
+/*
 [data-role-background="scout"] {
   animation: navAnimOpen .2s ease-in-out;
   background-image: url(/images/scout-bg.jpg);

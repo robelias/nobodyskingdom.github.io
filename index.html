@@ -195,7 +195,7 @@
             </div>
             <div class="column is-half">
               <figure class="image is-16by9">
-                <iframe class="has-ratio" width="640" height="360" src="https://www.youtube.com/embed/xyFeq8EEQo8" title="Nobodys Kingdom - Game Trailer" frameborder="0"; autoplay;
+                <iframe class="has-ratio" width="640" height="360" src="https://www.youtube.com/embed/xyFeq8EEQo8" frameborder="0"; 
                   allowfullscreen></iframe>
               </figure>
             </div>
@@ -205,8 +205,8 @@
     </div>
   </section>
 
-  <section class="hero container is-dark is-fullheight" id="class" data-role-background="warrior"
-    style="background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5) ), url(images/warrior-bg.jpg) no-repeat center fixed; max-width: 100%; max-height: 100%; background-size: cover;">
+  <section class="hero container is-dark is-fullheight" id="class" loading="lazy" alt="…" data-role-background="warrior"
+    style="background: linear-gradient( rgba(255, 0, 0, 0.1), rgba(0, 0, 0, 0.5) ), url(images/warrior-bg.jpg) no-repeat center fixed; max-width: 100%; max-height: 100%; background-size: cover;">
     <div class="hero-head section" style="margin-top: 18px;">
       <div class="container has-text-centered">
         <div>
@@ -387,7 +387,7 @@
     </div>
 
   </footer>
-
+ 
   <script>
     const listItems = document.querySelectorAll('.accordion');
     const role_background = document.querySelectorAll('data-role-background');
@@ -408,13 +408,16 @@
 
       switch (this.getAttribute('data-role')) {
         case "warrior":
-          document.getElementById('class').style.backgroundImage = "url(images/warrior-bg.jpg)";
+          document.getElementById('class').style.background = "linear-gradient( rgba(255, 0, 0, 0.1), rgba(0, 0, 0, 0.5) ), url(images/warrior-bg.jpg) no-repeat center fixed" ; 
+          document.getElementById('class').style.backgroundSize = "cover" ; 
           break;
         case "scout":
-          document.getElementById('class').style.backgroundImage = "url(images/scout-bg.jpg)";
+        document.getElementById('class').style.background = "linear-gradient( rgba(255, 0, 0, 0.1), rgba(0, 0, 0, 0.5) ), url(images/scout-bg.jpg) no-repeat center fixed" ; 
+          document.getElementById('class').style.backgroundSize = "cover" ; 
           break;
         case "mage":
-          document.getElementById('class').style.backgroundImage = "url(images/wizard-bg.jpg)";
+        document.getElementById('class').style.background = "linear-gradient( rgba(255, 0, 0, 0.1), rgba(0, 0, 0, 0.5) ), url(images/wizard-bg.jpg) no-repeat center fixed" ; 
+          document.getElementById('class').style.backgroundSize = "cover" ; 
           break;
       }
     }
@@ -449,6 +452,7 @@
     // fill "The selected language is:"
 
   </script>
+  
 </body>
 
 </html>
