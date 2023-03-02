@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="bulma/css/bulma.css">
   <link rel="stylesheet" type="text/css" href="bulma/css/bulma-timeline.min.css">
   <link rel="stylesheet" type="text/css" href="bulma/css/bulma-accordion.min.css">
+  <link rel="stylesheet" href="bulma/css/aos.css">
 </head>
 
 <body>
@@ -94,7 +95,7 @@
       <div class="container has-text-justified">
         <div class="item-1">
           <div class="columns">
-            <div class="column is-half ">
+            <div class="column is-half " data-aos="fade-right">
               <div class="subtitle ">
                 <div>
                   <a class="title">
@@ -139,7 +140,7 @@
   <section class="hero is-dark is-fullheight" id="info"
     style="background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5) ), url(images/web-bg.jpg) no-repeat center; max-width: 100%; max-height: 100%; background-size: cover;">
     <div class="hero-head section has-text-centered">
-      <div class="container has-text-centered">
+      <div class="container has-text-centered" data-aos="fade-down">
         <div>
           <p class="title is-1 lang lang-en">
             Introduction
@@ -163,7 +164,7 @@
       <div class="container has-text-justified">
         <div class="item-1">
           <div class="columns">
-            <div class="column is-half ">
+            <div class="column is-half" data-aos="fade-right">
               <div class="subtitle ">
                 <div>
                   <p class="lang lang-es ">Has llegado a un nuevo mundo con la misión de conquistarlo, pero hay
@@ -214,7 +215,7 @@
 
 
             </div>
-            <div class="column is-half">
+            <div class="column is-half" data-aos="zoom-in-up">
               <figure class="image is-16by9">
                 <iframe class="has-ratio" width="640" height="360" src="https://www.youtube.com/embed/xyFeq8EEQo8"
                   frameborder="0" ; allowfullscreen></iframe>
@@ -228,7 +229,7 @@
 
   <section class="hero container is-dark is-fullheight" id="class" loading="lazy" alt="…" data-role-background="warrior"
     style="background: linear-gradient( rgba(255, 0, 0, 0.1), rgba(0, 0, 0, 0.5) ), url(images/warrior-bg.jpg) no-repeat center fixed; max-width: 100%; max-height: 100%; background-size: cover;">
-    <div class="hero-head section" style="margin-top: 18px;">
+    <div class="hero-head section" style="margin-top: 18px;" data-aos="fade-down">
       <div class="container has-text-centered">
         <div>
           <p class="title is-1 lang lang-en">
@@ -248,7 +249,7 @@
         </div>
       </div>
     </div>
-    <div class="hero-body " style="margin-top: -35px;">
+    <div class="hero-body " style="margin-top: -35px;" data-aos="fade-right">
       <div class="accordions" style="max-width: 50em;">
         <article class="accordion is-active" data-role="warrior">
           <div class="accordion-header toggle" style="height: 50px;">
@@ -360,7 +361,7 @@
       <div class="container">
         <div class="item-1">
           <div class="columns">
-            <div class="column is-half ">
+            <div class="column is-half " data-aos="fade-right">
               <div class="">
                 <p class="lang lang-es title is-1">
                   Maestrías y talentos
@@ -497,7 +498,12 @@
     });
 
   </script>
-
+<script src="bulma/js/aos.js"></script>
+<script>
+    AOS.init({
+        once: true
+    });
+</script>
 </body>
 
 </html>
