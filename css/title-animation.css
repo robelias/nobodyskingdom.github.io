@@ -1,0 +1,119 @@
+
+
+.title-animation {
+    position: relative; 
+}
+.padding-top {
+    padding-top: 3em;
+}
+.bottom-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 90%;
+}
+
+.top-img {
+    position: absolute;
+    z-index: 2;
+    /* animation: slide 5s infinite; */
+    }
+img.top-img:nth-child(2) {
+    position: absolute;
+    top: -0.5em;
+    left: -7%;
+    width: 7%;
+    animation: slide 6s infinite;
+
+    }
+img.top-img:nth-child(3) {
+    position: absolute;
+    top: -1em;
+    left: -4%;
+    width: 7%;
+    animation: slide 5s infinite;
+
+}
+img.top-img:nth-child(4) {
+    position: absolute;
+    top: -1em;
+    left: 1%;
+    width: 5%;
+    animation: fade 6s infinite;
+    }
+img.top-img:nth-child(5) {
+    position: absolute;
+    top: 0.3em;
+    left: -4%;
+    width: 5%;
+    animation: fade 8s infinite;
+
+    }
+    
+/* right */
+img.top-img:nth-child(6) {
+    position: absolute;
+    top: 1.1em;
+    right: 5%;
+    width: 7%;
+    animation: slide 6s infinite;
+
+    }
+img.top-img:nth-child(7) {
+    position: absolute;
+    top: 1.8em;
+    right: 4%;
+    width: 7%;
+    animation: slide 5s infinite;
+
+}
+img.top-img:nth-child(8) {
+    position: absolute;
+    top: 1em;
+    right: 1%;
+    width: 5%;
+    animation: fade 6s infinite;
+    }
+img.top-img:nth-child(9) {
+    position: absolute;
+    top: 1.75em;
+    right: 4%;
+    width: 5%;
+    animation: fade 8s infinite;
+
+    }
+@keyframes slide {
+    0% {
+        transform: translateY(0);
+        }
+        50% {
+        transform: translateY(15%);
+        }
+        
+    100% {
+        transform: translateY(0%);
+    }
+    }
+@keyframes fade {
+0% { opacity: 0; }
+40% { opacity: 1; }
+60% { opacity: 1; }
+100% { opacity: 0; }
+}
+
+
+@keyframes shake {
+0% { transform: translateX(0); }
+5% { transform: translateX(-7px); }
+10% { transform: translateX(7px); }
+15% { transform: translateX(-7px); }
+20% { transform: translateX(0); }
+100% { transform: translateX(0); }
+}
+
+.shake-icon {
+animation: shake 5s;
+animation-delay: 5s;
+animation-iteration-count: infinite;
+}
